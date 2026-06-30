@@ -10,10 +10,14 @@ Northwestern Polytechnical University
 
 This repository contains the official implementation of **TopoGS**, a topology-aware anchor feature aggregation framework for large-scale 3D Gaussian Splatting.
 
+![TopoGS qualitative and quantitative improvements](assets/topogs-results.png)
+
 TopoGS builds on an octree-anchor 3DGS backbone and introduces two lightweight modules:
 
 - **Hierarchical Anchor Coupling (HAC)** establishes cross-level gradient pathways through per-level parent-self-child context triplets.
 - **Structure-Aware Containment Aggregation (SACA)** uses octree containment to softly weight topologically connected cross-level anchors.
+
+![TopoGS framework](assets/topogs-framework.png)
 
 ## Updates
 
