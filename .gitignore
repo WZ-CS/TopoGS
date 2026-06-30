@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Build artifacts
+build/
+dist/
+*.o
+*.out
+*.log
+core*
+
+# Local editors and OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Datasets, outputs, checkpoints, and logs
+data/
+dataset/
+datasets/
+datasets_*/
+output/
+outputs/
+results/
+exp/
+experiments/
+logs/
+tensorboard_3d/
+screenshots/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# Large external dependencies and local installers
+Depth-Anything-V2/
+cuda_*.run
+*.whl
+*.zip
+*.tar
+*.tar.gz
+
+# Generated analysis artifacts
+*.npy
+*.npz
+figure*_matrices.*
+saca_active_ratio.*
+sim_*.*
+
+# Local scratch scripts
+run.sh
+train.sh
+train2.sh
