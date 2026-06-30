@@ -56,3 +56,6 @@ sim_*.*
 run.sh
 train.sh
 train2.sh
+
+# Agent planning artifacts
+docs/superpowers/
