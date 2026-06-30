@@ -27,6 +27,8 @@ TopoGS builds on an octree-anchor 3DGS backbone and introduces two lightweight m
 
 - [x] Release training, rendering, and evaluation code.
 - [ ] Release pretrained checkpoints.
+- [ ] Release links for partially processed datasets.
+- [ ] Release a more detailed dataset preprocessing guide.
 - [ ] Add arXiv and project-page links when available.
 
 ## Installation
@@ -190,16 +192,3 @@ This project builds on and benefits from the following works and codebases:
 - Depth-Anything-V2
 
 Please also follow the licenses and terms of the upstream projects and datasets.
-
-## Citation
-
-If you find TopoGS useful, please cite:
-
-```bibtex
-@article{zhang2026topogs,
-  title={TopoGS: Topology-Aware Anchor Feature Aggregation for Large-Scale 3D Gaussian Splatting},
-  author={Zhang, Wei and Gong, Shiqiang and Yu, Shengkai and Wang, Zeyu and Wang, Qi},
-  journal={IEEE Transactions on Multimedia},
-  year={2026}
-}
-```
