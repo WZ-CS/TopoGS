@@ -2,9 +2,13 @@
 
 # TopoGS: Topology-Aware Anchor Feature Aggregation for Large-Scale 3D Gaussian Splatting
 
-Wei Zhang, Shiqiang Gong, Shengkai Yu, Zeyu Wang, Qi Wang
+Wei Zhang<sup>1,2</sup>, Shiqiang Gong<sup>1</sup>, Shengkai Yu<sup>2</sup>, Zeyu Wang<sup>2</sup>, Clement Mallet<sup>3</sup>, Zhitong Xiong<sup>2</sup>, and Qi Wang<sup>2</sup>
 
-Northwestern Polytechnical University
+<sup>1</sup> School of Computer Science, Northwestern Polytechnical University<br>
+<sup>2</sup> School of Artificial Intelligence, Optics and Electronics (iOPEN), Northwestern Polytechnical University<br>
+<sup>3</sup> LASTIG, Université Gustave Eiffel, the French National Institute of Geographic and Forest Information (IGN), and Géodata Paris, France
+
+Corresponding author: Qi Wang
 
 </div>
 
@@ -18,6 +22,45 @@ TopoGS builds on an octree-anchor 3DGS backbone and introduces two lightweight m
 - **Structure-Aware Containment Aggregation (SACA)** uses octree containment to softly weight topologically connected cross-level anchors.
 
 ![TopoGS framework](assets/topogs-framework.png)
+
+## Results
+
+The following tables summarize selected results from the paper. CityGS-X is the direct octree-anchor backbone baseline used to evaluate the contribution of TopoGS.
+
+### Main Quantitative Results
+
+| Benchmark | Scene | CityGS-X PSNR | TopoGS SSIM | TopoGS PSNR | TopoGS LPIPS | PSNR Gain |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| Mill19 | Building | 22.76 | 0.875 | 25.43 | 0.152 | +2.67 |
+| Mill19 | Rubble | 26.15 | 0.912 | 30.99 | 0.127 | +4.84 |
+| UrbanScene3D | Residence | 22.44 | 0.899 | 25.24 | 0.122 | +2.80 |
+| UrbanScene3D | Sci-Art | 22.77 | 0.908 | 26.90 | 0.140 | +4.13 |
+| Tanks & Temples | Train | 22.71 | 0.877 | 24.60 | 0.119 | +1.89 |
+| Tanks & Temples | Truck | 25.89 | 0.920 | 27.82 | 0.084 | +1.93 |
+| MatrixCity | Block-Small | 27.15 | 0.876 | 28.05 | 0.237 | +0.90 |
+| WHU | Area 1 | 38.45 | 0.987 | 40.68 | 0.037 | +2.23 |
+| WHU | Area 4 | 38.22 | 0.987 | 40.61 | 0.033 | +2.39 |
+| WHU | Area 5 | 36.95 | 0.981 | 37.18 | 0.049 | +0.23 |
+
+### Component Ablation
+
+Results are reported on the Mill19-Building scene.
+
+| ID | HAC | SACA Mask | Soft Alpha | PSNR | Training Time |
+| --- | --- | --- | --- | ---: | ---: |
+| 1 | No | No | No | 22.76 | 2h15m |
+| 2 | Yes | No | No | 24.67 | 2h22m |
+| 3 | Yes | Yes | No | 25.23 | 2h28m |
+| 4 | Yes | Yes | Yes | **25.43** | 2h30m |
+
+### Inference Efficiency
+
+Results are measured on Mill19-Building with a single RTX 4090.
+
+| Method | FPS | GPU Memory | Neural Gaussians |
+| --- | ---: | ---: | ---: |
+| CityGS-X | 29.0 | 4.6 GB | 6.38 M |
+| TopoGS (Ours) | **39.4** | **3.0 GB** | **4.16 M** |
 
 ## Updates
 
