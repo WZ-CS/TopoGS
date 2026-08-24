@@ -2,13 +2,11 @@
 
 # TopoGS: Topology-Aware Anchor Feature Aggregation for Large-Scale 3D Gaussian Splatting
 
-Wei Zhang<sup>1,2</sup>, Shiqiang Gong<sup>1</sup>, Shengkai Yu<sup>2</sup>, Zeyu Wang<sup>2</sup>, Clement Mallet<sup>3</sup>, Zhitong Xiong<sup>2</sup>, and Qi Wang<sup>2</sup>
+Northwestern Polytechnical University; Université Gustave Eiffel / IGN
 
-<sup>1</sup> School of Computer Science, Northwestern Polytechnical University<br>
-<sup>2</sup> School of Artificial Intelligence, Optics and Electronics (iOPEN), Northwestern Polytechnical University<br>
-<sup>3</sup> LASTIG, Université Gustave Eiffel, the French National Institute of Geographic and Forest Information (IGN), and Géodata Paris, France
+Wei Zhang, Shiqiang Gong, Shengkai Yu, Zeyu Wang, Clement Mallet, Zhitong Xiong, and Qi Wang<sup>†</sup>
 
-Corresponding author: Qi Wang
+<sup>†</sup> indicates corresponding author
 
 </div>
 
