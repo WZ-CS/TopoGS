@@ -8,18 +8,23 @@ Wei Zhang, Shiqiang Gong, Shengkai Yu, Zeyu Wang, Clement Mallet, Zhitong Xiong,
 
 <sup>†</sup> indicates corresponding author
 
+**Topology-aware cross-level anchor feature aggregation for large-scale 3D Gaussian Splatting.**
+
+<img src="assets/topogs-framework.png" width="96%" alt="TopoGS framework">
+
+<sub><b>Method overview.</b> TopoGS introduces HAC and SACA between the octree-anchor backbone and the Neural Gaussian decoder.</sub>
+
 </div>
 
 This repository contains the official implementation of **TopoGS**, a topology-aware anchor feature aggregation framework for large-scale 3D Gaussian Splatting.
 
-![TopoGS qualitative and quantitative improvements](assets/topogs-results.png)
+TopoGS builds on an octree-anchor 3DGS backbone and enhances anchor features with two lightweight modules: **Hierarchical Anchor Coupling (HAC)** establishes cross-level gradient pathways through per-level parent-self-child context triplets, while **Structure-Aware Containment Aggregation (SACA)** uses octree containment to softly weight topologically connected cross-level anchors.
 
-TopoGS builds on an octree-anchor 3DGS backbone and introduces two lightweight modules:
+<div align="center">
+<img src="assets/topogs-results.png" width="96%" alt="TopoGS feature reorganization and PSNR improvements">
 
-- **Hierarchical Anchor Coupling (HAC)** establishes cross-level gradient pathways through per-level parent-self-child context triplets.
-- **Structure-Aware Containment Aggregation (SACA)** uses octree containment to softly weight topologically connected cross-level anchors.
-
-![TopoGS framework](assets/topogs-framework.png)
+<sub><b>Overview highlights.</b> TopoGS reorganizes cross-level anchor features and improves PSNR across large-scale scenes.</sub>
+</div>
 
 ## Results
 
