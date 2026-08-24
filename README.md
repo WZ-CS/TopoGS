@@ -25,22 +25,22 @@ TopoGS builds on an octree-anchor 3DGS backbone and introduces two lightweight m
 
 ## Results
 
-The following tables summarize selected results from the paper. CityGS-X is the direct octree-anchor backbone baseline used to evaluate the contribution of TopoGS.
+The following tables summarize selected results from the paper. CityGS-X is the direct octree-anchor backbone baseline used to evaluate the contribution of TopoGS. **Bold** highlights TopoGS results and the corresponding PSNR gains.
 
 ### Main Quantitative Results
 
 | Benchmark | Scene | CityGS-X PSNR | TopoGS SSIM | TopoGS PSNR | TopoGS LPIPS | PSNR Gain |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| Mill19 | Building | 22.76 | 0.875 | 25.43 | 0.152 | +2.67 |
-| Mill19 | Rubble | 26.15 | 0.912 | 30.99 | 0.127 | +4.84 |
-| UrbanScene3D | Residence | 22.44 | 0.899 | 25.24 | 0.122 | +2.80 |
-| UrbanScene3D | Sci-Art | 22.77 | 0.908 | 26.90 | 0.140 | +4.13 |
-| Tanks & Temples | Train | 22.71 | 0.877 | 24.60 | 0.119 | +1.89 |
-| Tanks & Temples | Truck | 25.89 | 0.920 | 27.82 | 0.084 | +1.93 |
-| MatrixCity | Block-Small | 27.15 | 0.876 | 28.05 | 0.237 | +0.90 |
-| WHU | Area 1 | 38.45 | 0.987 | 40.68 | 0.037 | +2.23 |
-| WHU | Area 4 | 38.22 | 0.987 | 40.61 | 0.033 | +2.39 |
-| WHU | Area 5 | 36.95 | 0.981 | 37.18 | 0.049 | +0.23 |
+| Mill19 | Building | 22.76 | **0.875** | **25.43** | **0.152** | **+2.67** |
+| Mill19 | Rubble | 26.15 | **0.912** | **30.99** | **0.127** | **+4.84** |
+| UrbanScene3D | Residence | 22.44 | **0.899** | **25.24** | **0.122** | **+2.80** |
+| UrbanScene3D | Sci-Art | 22.77 | **0.908** | **26.90** | **0.140** | **+4.13** |
+| Tanks & Temples | Train | 22.71 | **0.877** | **24.60** | **0.119** | **+1.89** |
+| Tanks & Temples | Truck | 25.89 | **0.920** | **27.82** | **0.084** | **+1.93** |
+| MatrixCity | Block-Small | 27.15 | **0.876** | **28.05** | **0.237** | **+0.90** |
+| WHU | Area 1 | 38.45 | **0.987** | **40.68** | **0.037** | **+2.23** |
+| WHU | Area 4 | 38.22 | **0.987** | **40.61** | **0.033** | **+2.39** |
+| WHU | Area 5 | 36.95 | **0.981** | **37.18** | **0.049** | **+0.23** |
 
 ### Component Ablation
 
@@ -48,10 +48,10 @@ Results are reported on the Mill19-Building scene.
 
 | ID | HAC | SACA Mask | Soft Alpha | PSNR | Training Time |
 | --- | --- | --- | --- | ---: | ---: |
-| 1 | No | No | No | 22.76 | 2h15m |
-| 2 | Yes | No | No | 24.67 | 2h22m |
-| 3 | Yes | Yes | No | 25.23 | 2h28m |
-| 4 | Yes | Yes | Yes | **25.43** | 2h30m |
+| 1 | &ndash; | &ndash; | &ndash; | 22.76 | 2h15m |
+| 2 | &#10003; | &ndash; | &ndash; | 24.67 | 2h22m |
+| 3 | &#10003; | &#10003; | &ndash; | 25.23 | 2h28m |
+| **4** | **&#10003;** | **&#10003;** | **&#10003;** | **25.43** | **2h30m** |
 
 ### Inference Efficiency
 
