@@ -16,7 +16,12 @@ This repository contains the official implementation of **TopoGS**, a topology-a
 
 TopoGS builds on an octree-anchor 3DGS backbone and enhances anchor features with two lightweight modules. **Hierarchical Anchor Coupling (HAC)** establishes cross-level gradient pathways through per-level parent-self-child context triplets, while **Structure-Aware Containment Aggregation (SACA)** uses octree containment to softly weight topologically connected cross-level anchors. The design improves rendering quality while preserving the efficiency of the backbone.
 
-## Results
+## 📰 News
+
+- 🏆 **[2026-09-08]** Our TopoGS-based solution won **1st place** in the [TwinWorld Challenge at ECCV 2026](https://www.codabench.org/competitions/17661/#/results-tab) on large-scale 3D semantic Gaussian Splatting reconstruction.
+- 🎉 **[2026-06-30]** The training, rendering, and evaluation code for **TopoGS** is now open source!
+
+## 📊 Results
 
 The following tables summarize selected results from the paper. CityGS-X is the direct octree-anchor backbone baseline used to evaluate the contribution of TopoGS.
 
@@ -64,11 +69,7 @@ Results are measured on Mill19-Building with a single RTX 4090.
 | CityGS-X | 29.0 | 4.6 GB | 6.38 M |
 | TopoGS (Ours) | **39.4** | **3.0 GB** | **4.16 M** |
 
-## Updates
-
-- 2026-06-30: Initial training, rendering, and evaluation code release.
-
-## Todo List
+## 📋 Todo List
 
 - [x] Release training, rendering, and evaluation code.
 - [ ] Release pretrained checkpoints.
@@ -76,7 +77,7 @@ Results are measured on Mill19-Building with a single RTX 4090.
 - [ ] Release a more detailed dataset preprocessing guide.
 - [ ] Add arXiv and project-page links when available.
 
-## Installation
+## 🛠️ Installation
 
 The code was developed with Python 3.8, PyTorch 2.0, and CUDA 11.8. Similar CUDA-enabled Linux environments should work, but may require small dependency adjustments.
 
@@ -91,7 +92,7 @@ pip install submodule_cityx/diff-gaussian-rasterization
 pip install submodule_cityx/simple-knn
 ```
 
-## Depth Preparation
+## 🗺️ Depth Preparation
 
 TopoGS can use monocular depth priors for real-world datasets. We do not vendor Depth-Anything-V2 in this repository. Install it externally and download its checkpoint from the official project:
 
@@ -127,7 +128,7 @@ python multi_view_precess.py \
   --pixel_thred 1
 ```
 
-## Data
+## 🗂️ Data
 
 Datasets are not included in this repository. We evaluate on public benchmarks used in the paper:
 
@@ -165,7 +166,7 @@ datasets/MatrixCity/aerial/small_city/aerial/
     └── sparse/0/
 ```
 
-## Training
+## 🚀 Training
 
 Single-scene training example:
 
@@ -197,7 +198,7 @@ bash scripts/train_matrixcity.sh datasets/MatrixCity/aerial/small_city/aerial/tr
 bash scripts/train_whu.sh datasets/WHU/area1 output/whu_area1_topogs
 ```
 
-## Rendering And Evaluation
+## 🖼️ Rendering And Evaluation
 
 Render held-out views:
 
@@ -223,7 +224,7 @@ Compute F1 score for reconstructed meshes:
 bash scripts/eval_f1.sh output/mill19_building_topogs/possion_mesh/tsdf_fusion.ply datasets/mill19/building/tsdf_fusion.ply
 ```
 
-## Acknowledgements
+## 🤝 Acknowledgements
 
 This project builds on and benefits from the following works and codebases:
 
