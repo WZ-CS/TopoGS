@@ -22,13 +22,27 @@ The following tables summarize selected results from the paper. CityGS-X is the 
 
 ### Main Quantitative Results
 
-| Benchmark Group | Scenes | Avg. PSNR Gain vs. CityGS-X | Best Scene Gain | Highlight |
-| --- | ---: | ---: | ---: | --- |
-| Mill19 + UrbanScene3D | 4 | **+3.61 dB** | **+4.84 dB** on Rubble | Large-scale aerial scenes |
-| Tanks & Temples | 2 | **+1.91 dB** | **+1.93 dB** on Truck | Ground-level outdoor scenes |
-| MatrixCity + WHU | 4 | **+1.44 dB** | **+2.39 dB** on WHU-Area 4 | Synthetic and cartographic aerial scenes |
+Full comparisons from Tables 1 and 3 of the paper are shown below. Higher PSNR and SSIM and lower LPIPS indicate better rendering quality. Bold and underlined values denote the best and second-best results, respectively.
 
-Full per-scene quantitative results are reported in the paper.
+**Table 1. Mill19 and UrbanScene3D**
+
+<p align="center">
+  <a href="assets/table_1.png">
+    <img src="assets/table_1.png" width="100%" alt="Table 1: full quantitative comparison on Mill19 Building and Rubble, and UrbanScene3D Residence and Sci-Art, reporting SSIM, PSNR, and LPIPS">
+  </a>
+</p>
+
+TopoGS achieves the best PSNR and LPIPS among the compared methods on all four large-scale aerial scenes, with PSNR gains of **2.67 to 4.84 dB** over CityGS-X. Methods are grouped by whether they use explicit geometric supervision ("Geom. opt.").
+
+**Table 3. MatrixCity and WHU**
+
+<p align="center">
+  <a href="assets/table_3.png">
+    <img src="assets/table_3.png" width="100%" alt="Table 3: full quantitative comparison on MatrixCity and WHU Areas 1, 4, and 5, reporting SSIM, PSNR, and LPIPS">
+  </a>
+</p>
+
+TopoGS achieves the best PSNR, SSIM, and LPIPS among the compared methods on all four scenes, improving PSNR over CityGS-X by **0.90 dB** on MatrixCity and up to **2.39 dB** on WHU. Dashes in the metric columns indicate results not reported by the original authors.
 
 ### Component Ablation
 
