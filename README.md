@@ -8,7 +8,11 @@ Wei Zhang, Shiqiang Gong, Shengkai Yu, Zeyu Wang, Clement Mallet, Zhitong Xiong,
 
 <sup>†</sup> indicates corresponding author
 
-[📄 arXiv](https://arxiv.org/abs/2609.27868) · [📑 PDF](https://arxiv.org/pdf/2609.27868) · 🌐 Project Page (in progress)
+<p>
+  <a href="https://arxiv.org/pdf/2609.27868"><img src="https://img.shields.io/badge/Paper-4c1?style=plastic" alt="Paper (PDF)" height="28"></a>
+  <a href="https://arxiv.org/abs/2609.27868"><img src="https://img.shields.io/badge/arXiv-2609.27868-b31b1b?style=plastic" alt="arXiv: 2609.27868" height="28"></a>
+  <img src="https://img.shields.io/badge/Project_Page_(Coming_Soon)-6aa84f?style=plastic" alt="Project Page (Coming Soon)" height="28">
+</p>
 
 <img src="assets/topogs-framework.png" width="96%" alt="TopoGS framework">
 
