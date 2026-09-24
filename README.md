@@ -8,6 +8,8 @@ Wei Zhang, Shiqiang Gong, Shengkai Yu, Zeyu Wang, Clement Mallet, Zhitong Xiong,
 
 <sup>†</sup> indicates corresponding author
 
+[📄 arXiv](https://arxiv.org/abs/2609.27868) · [📑 PDF](https://arxiv.org/pdf/2609.27868) · 🌐 Project Page (in progress)
+
 <img src="assets/topogs-framework.png" width="96%" alt="TopoGS framework">
 
 </div>
@@ -18,6 +20,7 @@ TopoGS builds on an octree-anchor 3DGS backbone and enhances anchor features wit
 
 ## 📰 News
 
+- 📄 **[2026-09-24]** The [TopoGS paper](https://arxiv.org/abs/2609.27868) is now available on arXiv.
 - 🏆 **[2026-09-08]** Our TopoGS-based solution won **1st place** in the [TwinWorld Challenge at ECCV 2026](https://www.codabench.org/competitions/17661/#/results-tab) on large-scale 3D semantic Gaussian Splatting reconstruction.
 - 🎉 **[2026-06-30]** The training, rendering, and evaluation code for **TopoGS** is now open source!
 
@@ -72,10 +75,11 @@ Results are measured on Mill19-Building with a single RTX 4090.
 ## 📋 Todo List
 
 - [x] Release training, rendering, and evaluation code.
+- [x] Release the [paper on arXiv](https://arxiv.org/abs/2609.27868).
 - [ ] Release pretrained checkpoints.
 - [ ] Release links for partially processed datasets.
 - [ ] Release a more detailed dataset preprocessing guide.
-- [ ] Add arXiv and project-page links when available.
+- [ ] Launch the project page (in progress).
 
 ## 🛠️ Installation
 
@@ -222,6 +226,22 @@ Compute F1 score for reconstructed meshes:
 
 ```bash
 bash scripts/eval_f1.sh output/mill19_building_topogs/possion_mesh/tsdf_fusion.ply datasets/mill19/building/tsdf_fusion.ply
+```
+
+## 📖 Citation
+
+If you find TopoGS useful in your research, please cite:
+
+```bibtex
+@misc{zhang2026topogstopologyawareanchorfeature,
+  title={TopoGS: Topology-Aware Anchor Feature Aggregation for Large-Scale 3D Gaussian Splatting},
+  author={Wei Zhang and Shiqiang Gong and Shengkai Yu and Zeyu Wang and Clement Mallet and Zhitong Xiong and Qi Wang},
+  year={2026},
+  eprint={2609.27868},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2609.27868},
+}
 ```
 
 ## 🤝 Acknowledgements
