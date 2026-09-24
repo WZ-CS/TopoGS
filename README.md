@@ -232,6 +232,21 @@ Compute F1 score for reconstructed meshes:
 bash scripts/eval_f1.sh output/mill19_building_topogs/possion_mesh/tsdf_fusion.ply datasets/mill19/building/tsdf_fusion.ply
 ```
 
+## 🤝 Acknowledgements
+
+This project builds on and benefits from the following works and codebases:
+
+- 3D Gaussian Splatting by GraphDECO/Inria
+- Scaffold-GS
+- Octree-GS
+- CityGS-X
+- CityGaussian and CityGaussianV2
+- PGSR
+- Geo-GS
+- Depth-Anything-V2
+
+Please also follow the licenses and terms of the upstream projects and datasets.
+
 ## 📖 Citation
 
 If you find TopoGS useful in your research, please cite:
@@ -247,18 +262,3 @@ If you find TopoGS useful in your research, please cite:
   url={https://arxiv.org/abs/2609.27868},
 }
 ```
-
-## 🤝 Acknowledgements
-
-This project builds on and benefits from the following works and codebases:
-
-- 3D Gaussian Splatting by GraphDECO/Inria
-- Scaffold-GS
-- Octree-GS
-- CityGS-X
-- CityGaussian and CityGaussianV2
-- PGSR
-- Geo-GS
-- Depth-Anything-V2
-
-Please also follow the licenses and terms of the upstream projects and datasets.
