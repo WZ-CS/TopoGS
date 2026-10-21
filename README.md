@@ -11,7 +11,7 @@ Wei Zhang, Shiqiang Gong, Shengkai Yu, Zeyu Wang, Clement Mallet, Zhitong Xiong,
 <p>
   <a href="https://arxiv.org/pdf/2609.27868"><img src="https://img.shields.io/badge/Paper-4c1?style=plastic" alt="Paper (PDF)" height="28"></a>
   <a href="https://arxiv.org/abs/2609.27868"><img src="https://img.shields.io/badge/arXiv-2609.27868-b31b1b?style=plastic" alt="arXiv: 2609.27868" height="28"></a>
-  <img src="https://img.shields.io/badge/Project_Page_(Coming_Soon)-6aa84f?style=plastic" alt="Project Page (Coming Soon)" height="28">
+  <a href="https://gongshiqiang02.github.io/topogs/"><img src="https://img.shields.io/badge/Project_Page-6aa84f?style=plastic" alt="Project Page" height="28"></a>
 </p>
 
 <img src="assets/topogs-framework.png" width="96%" alt="TopoGS framework">
@@ -24,6 +24,7 @@ TopoGS builds on an octree-anchor 3DGS backbone and enhances anchor features wit
 
 ## 📰 News
 
+- 🌐 **[2026-10-21]** The [TopoGS project page](https://gongshiqiang02.github.io/topogs/) is now live!
 - 📄 **[2026-09-24]** The [TopoGS paper](https://arxiv.org/abs/2609.27868) is now available on arXiv.
 - 🏆 **[2026-09-08]** Our TopoGS-based solution won **1st place** in the [TwinWorld Challenge at ECCV 2026](https://www.codabench.org/competitions/17661/#/results-tab) on large-scale 3D semantic Gaussian Splatting reconstruction.
 - 🎉 **[2026-06-30]** The training, rendering, and evaluation code for **TopoGS** is now open source!
@@ -83,7 +84,7 @@ Results are measured on Mill19-Building with a single RTX 4090.
 - [ ] Release pretrained checkpoints.
 - [ ] Release links for partially processed datasets.
 - [ ] Release a more detailed dataset preprocessing guide.
-- [ ] Launch the project page (in progress).
+- [x] Launch the [project page](https://gongshiqiang02.github.io/topogs/).
 
 ## 🛠️ Installation
 
